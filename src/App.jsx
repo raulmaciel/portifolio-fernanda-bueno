@@ -2,6 +2,8 @@ import { useState } from 'react'
 import './App.css'
 import HeroSlider from './components/HeroSlider'
 import Navbar from './components/Navbar'
+import PortfolioSlider from './components/PortfolioSlider'
+
 
 function App() {
   return (
@@ -51,7 +53,7 @@ function App() {
 
         <section
           id="services"
-          className="w-full px-6 md:px-20 py-24 bg-[#111827] text-white font-[Inter]"
+          className="min-h-screen w-full px-6 md:px-20 py-24 bg-[#111827] text-white font-[Inter] scroll-mt-5"
         >
           <div className="max-w-6xl mx-auto text-center space-y-12">
             <div>
@@ -88,9 +90,123 @@ function App() {
           </div>
         </section>
 
-        <section id="skills"></section>
-        <section id="portfolio"></section>
-        <section id="contact"></section>
+        <section
+          id="skills"
+          className="min-h-screen w-full px-6 md:px-20 py-24 bg-[#0f172a] text-white font-[Inter] scroll-mt-5"
+        >
+          <div className="max-w-6xl mx-auto text-center space-y-12">
+            <div>
+              <h2 className="text-3xl md:text-4xl font-bold tracking-tight bg-gradient-to-r from-indigo-300 via-purple-300 to-pink-300 bg-clip-text text-transparent">
+                Minhas Habilidades
+              </h2>
+              <p className="mt-4 text-base md:text-lg text-gray-300">
+                Experiência em múltiplas plataformas, ferramentas e linguagens da comunicação moderna.
+              </p>
+            </div>
+
+            <div className="grid gap-6 sm:grid-cols-2 md:grid-cols-3 text-left">
+              <div className="bg-[#1e293b] p-5 rounded-xl border border-gray-700 hover:border-indigo-400 transition">
+                <h3 className="text-lg font-semibold text-indigo-400 mb-1">Redação jornalística</h3>
+                <p className="text-gray-300 text-sm">Criação de textos informativos, reportagens e artigos com apuração precisa e linguagem acessível.</p>
+              </div>
+
+              <div className="bg-[#1e293b] p-5 rounded-xl border border-gray-700 hover:border-purple-400 transition">
+                <h3 className="text-lg font-semibold text-purple-400 mb-1">SEO & Conteúdo Web</h3>
+                <p className="text-gray-300 text-sm">Produção otimizada para mecanismos de busca, com foco em engajamento e relevância.</p>
+              </div>
+
+              <div className="bg-[#1e293b] p-5 rounded-xl border border-gray-700 hover:border-pink-400 transition">
+                <h3 className="text-lg font-semibold text-pink-400 mb-1">Mídias Sociais</h3>
+                <p className="text-gray-300 text-sm">Gestão de conteúdo e comunicação estratégica no Instagram, LinkedIn e mais.</p>
+              </div>
+
+              <div className="bg-[#1e293b] p-5 rounded-xl border border-gray-700 hover:border-blue-400 transition">
+                <h3 className="text-lg font-semibold text-blue-400 mb-1">Edição de vídeo & áudio</h3>
+                <p className="text-gray-300 text-sm">Conhecimento em ferramentas como Canva, CapCut e Photoshop para conteúdo multiplataforma.</p>
+              </div>
+
+              <div className="bg-[#1e293b] p-5 rounded-xl border border-gray-700 hover:border-teal-400 transition">
+                <h3 className="text-lg font-semibold text-teal-400 mb-1">Entrevistas e Apresentação</h3>
+                <p className="text-gray-300 text-sm">Boa comunicação oral, empatia e presença de câmera em entrevistas e vídeos institucionais.</p>
+              </div>
+
+              <div className="bg-[#1e293b] p-5 rounded-xl border border-gray-700 hover:border-yellow-400 transition">
+                <h3 className="text-lg font-semibold text-yellow-400 mb-1">Ética jornalística</h3>
+                <p className="text-gray-300 text-sm">Compromisso com a veracidade, responsabilidade e pluralidade de vozes na informação.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section
+          id="portfolio"
+          className="min-h-screen w-full px-6 md:px-20 py-24 bg-[#1a1a1a] text-white font-[Inter] scroll-mt-5"
+        >
+          <div className="max-w-6xl mx-auto text-center space-y-12">
+            <div>
+              <h2 className="text-3xl md:text-4xl font-bold tracking-tight bg-gradient-to-r from-cyan-300 via-blue-400 to-purple-400 bg-clip-text text-transparent">
+                Portfólio
+              </h2>
+              <p className="mt-4 text-base md:text-lg text-gray-300">
+                Experiências em campo, reportagens e produções jornalísticas realizadas mim.
+              </p>
+            </div>
+
+            <PortfolioSlider />
+          </div>
+        </section>
+        <section
+          id="contact"
+          className="min-h-screen w-full px-6 md:px-20 py-24 bg-[#0f172a] text-white font-[Inter] scroll-mt-5"
+        >
+          <div className="max-w-3xl mx-auto text-center space-y-12">
+            <div>
+              <h2 className="text-3xl md:text-4xl font-bold tracking-tight bg-gradient-to-r from-teal-300 via-cyan-400 to-blue-400 bg-clip-text text-transparent">
+                Entre em Contato
+              </h2>
+              <p className="mt-4 text-base md:text-lg text-gray-300">
+                Interessado(a) em uma parceria, projeto ou entrevista? Envie sua mensagem e responderei em breve!
+              </p>
+            </div>
+
+            <form
+              className="grid gap-6 text-left"
+              onSubmit={(e) => {
+                e.preventDefault()
+                alert("Mensagem enviada com sucesso!")
+              }}
+            >
+              <input
+                type="text"
+                name="nome"
+                placeholder="Seu nome"
+                required
+                className="w-full p-3 rounded-lg bg-[#1e293b] text-white border border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-400"
+              />
+              <input
+                type="email"
+                name="email"
+                placeholder="Seu email"
+                required
+                className="w-full p-3 rounded-lg bg-[#1e293b] text-white border border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-400"
+              />
+              <textarea
+                name="mensagem"
+                rows="5"
+                placeholder="Sua mensagem"
+                required
+                className="w-full p-3 rounded-lg bg-[#1e293b] text-white border border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-400"
+              />
+              <button
+                type="submit"
+                className="w-full bg-blue-600 hover:bg-blue-700 transition-colors text-white font-semibold py-3 rounded-lg shadow-md hover:shadow-blue-500/30"
+              >
+                Enviar Mensagem
+              </button>
+            </form>
+          </div>
+        </section>
+
       </main>
       <footer className="bg-neutral-900 text-white p-4 text-center">
         © 2025 - Todos os direitos reservados
