@@ -28,7 +28,7 @@ export default function Navbar() {
       {menuAberto && (
         <div className="md:hidden fixed top-20 left-1/2 transform -translate-x-1/2 w-[90%] max-w-5xl bg-black/90 backdrop-blur-md rounded-xl py-6 px-4 z-40 space-y-4 text-center text-white">
           <a href="#services" onClick={() => setMenuAberto(false)} className='block'>Serviços</a>
-          <a href="#skills" onClick={() => setMenuAberto(false)} className='block'>Skills</a>
+          <a href="#skills" onClick={() => setMenuAberto(false)} className='block'>Minhas Habilidades</a>
           <a href="#portfolio" onClick={() => setMenuAberto(false)} className='block'>Portifólio</a>
           <a href="#contact" onClick={() => setMenuAberto(false)} className='block'>Contato</a>
         </div>
