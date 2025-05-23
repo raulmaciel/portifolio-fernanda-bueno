@@ -6,9 +6,9 @@ import 'swiper/css/navigation'
 import 'swiper/css/pagination'
 
 const imagens = [
-  '/src/assets/fernanda1.png',
-  '/src/assets/fernanda2.png',
-  '/src/assets/fernanda3.png'
+  '/assets/fernanda1.png',
+  '/assets/fernanda2.png',
+  '/assets/fernanda3.png'
 ]
 
 export default function HeroSlider() {

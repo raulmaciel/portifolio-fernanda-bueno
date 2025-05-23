@@ -6,22 +6,22 @@ import 'swiper/css/navigation'
 const portfolioItems = [
   {
     title: 'Cultivo de Bonsai em Taubaté',
-    image: '/src/assets/portifolio/bonsai.png',
+    image: 'portifolio/bonsai.png',
     link: 'https://youtu.be/CHdlhcFeBEY?si=YxVxEizGZFUL5NMD',
   },
   {
     title: 'Como fazer Kokedamas',
-    image: '/src/assets/portifolio/kokedama.jpg',
+    image: 'portifolio/kokedama.jpg',
     link: 'https://youtu.be/lgIw6zhXhns',
   },
   {
     title: 'Artesã de Taubaté produz joias afetivas',
-    image: '/src/assets/portifolio/joias.jpg',
+    image: 'portifolio/joias.jpg',
     link: 'https://youtu.be/3KCuHbIvmCg',
   },
   {
     title: 'Cerimônia de posse em Taubaté 2025',
-    image: '/src/assets/portifolio/posse.jpg',
+    image: 'portifolio/posse.jpg',
     link: 'https://youtu.be/Z3ltrO4Ndts',
   },
 ]
