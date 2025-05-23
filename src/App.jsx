@@ -49,8 +49,45 @@ function App() {
         </section>
 
 
+        <section
+          id="services"
+          className="w-full px-6 md:px-20 py-24 bg-[#111827] text-white font-[Inter]"
+        >
+          <div className="max-w-6xl mx-auto text-center space-y-12">
+            <div>
+              <h2 className="text-3xl md:text-4xl font-bold tracking-tight bg-gradient-to-r from-red-400 via-pink-400 to-purple-400 bg-clip-text text-transparent">
+                Meus Serviços
+              </h2>
+              <p className="mt-4 text-base md:text-lg text-gray-300">
+                Como jornalista multiplataforma, entrego conteúdo com qualidade, ética e estratégia.
+              </p>
+            </div>
 
-        <section id="services"></section>
+            <div className="grid gap-8 md:grid-cols-3">
+              <div className="bg-[#1f2937] p-6 rounded-xl shadow-md border border-gray-700 hover:shadow-pink-500/20 transition">
+                <h3 className="text-xl font-semibold mb-2 text-pink-400">Reportagens</h3>
+                <p className="text-gray-300 text-sm leading-relaxed">
+                  Produção de matérias exclusivas, cobertura de eventos e entrevistas com apuração ética e ágil.
+                </p>
+              </div>
+
+              <div className="bg-[#1f2937] p-6 rounded-xl shadow-md border border-gray-700 hover:shadow-purple-500/20 transition">
+                <h3 className="text-xl font-semibold mb-2 text-purple-400">Conteúdo Digital</h3>
+                <p className="text-gray-300 text-sm leading-relaxed">
+                  Criação de conteúdo estratégico para redes sociais, sites e blogs com foco em engajamento.
+                </p>
+              </div>
+
+              <div className="bg-[#1f2937] p-6 rounded-xl shadow-md border border-gray-700 hover:shadow-red-500/20 transition">
+                <h3 className="text-xl font-semibold mb-2 text-red-400">Assessoria de Imprensa</h3>
+                <p className="text-gray-300 text-sm leading-relaxed">
+                  Gestão de imagem e relacionamento com a mídia para empresas, artistas e instituições.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
         <section id="skills"></section>
         <section id="portfolio"></section>
         <section id="contact"></section>
